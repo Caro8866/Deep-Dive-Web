@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>DEEP DIVE WEEK</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,13 +13,13 @@
       <article>
         <h1>DEEP DIVE WEEK</h1>
         <p>
-          -x Text manipulation, combining text and images/shapes, how text can
-          be shown on the web and how emphasis can be placed on text when it has
+          - Text manipulation, combining text and images/shapes, how text can be
+          shown on the web and how emphasis can be placed on text when it has
           been adapted.
         </p>
 
-        <h3>Text Wrapping</h3>
         <section id="sectTextWrap">
+          <h2>Text Wrapping</h2>
           <p>
             In classic text editing and document creating programs like Adobe
             InDesign and Microsoft Word, you are able to wrap text around
@@ -28,7 +28,7 @@
             shape-outside property.
           </p>
 
-          <p>Here you will be introduced to the many ways you can wrap text:</p>
+          <b>Here you will be introduced to the many ways you can wrap text:</b>
           <ul>
             <li>Basic wrapping around a square using float property</li>
             <li>Text wrap around a circle</li>
@@ -38,7 +38,7 @@
           </ul>
 
           <section class="subSectFloatWrap">
-            <h4>Basic wrapping around a square using float property</h4>
+            <h3>Basic wrapping around a square using float property</h3>
             <p>
               The float property in CSS allows images to become situated in a
               portion of text like in traditional text editing.
@@ -76,12 +76,12 @@
           </section>
 
           <section class="subSectCircleWrap">
-            <h4>Text wrap around a circle</h4>
+            <h3>Text wrap around a circle</h3>
             <p>
               To wrap sections of text around a circle all you need to use is
               the shape-outside property.
             </p>
-            <h5>Short step-by-step guide:</h5>
+            <h4>Short step-by-step guide:</h4>
             <ol>
               <li>
                 Set display flex and flex-direction: column on the overall
@@ -128,80 +128,80 @@
               src="https://cpwebassets.codepen.io/assets/embed/ei.js"
             ></script>
           </section>
-        </section>
 
-        <section class="subSectPolygonWrap">
-          <h4>Text wrap around a polygon</h4>
-          <p>
-            In order to text wrap around a polygon you will first need to have
-            the shape of your polygon.
-          </p>
-          <p>
-            A great tool for creating polygons for use online is
-            <span><a href="https://bennettfeely.com/clippy/">Clippy</a></span>
-          </p>
-          <p>
-            Clippy helps you create polygon clip paths in a intuitive
-            instructive way.
-          </p>
+          <section class="subSectPolygonWrap">
+            <h3>Text wrap around a polygon</h3>
+            <p>
+              In order to text wrap around a polygon you will first need to have
+              the shape of your polygon.
+            </p>
+            <p>
+              A great tool for creating polygons for use online is
+              <span><a href="https://bennettfeely.com/clippy/">Clippy</a></span>
+            </p>
+            <p>
+              Clippy helps you create polygon clip paths in a intuitive
+              instructive way.
+            </p>
 
-          <p>
-            After attaining your chosen polygon you will then need to put the
-            clip path into the styling of the shape's div.
-          </p>
-          <p>
-            Next step is to also put the same clip path as the shape-outside.
-            (This is all shown in the code pen below).
-          </p>
-          <p
-            class="codepen"
-            data-height="300"
-            data-default-tab="html,result"
-            data-slug-hash="eYyJrPX"
-            data-preview="true"
-            data-user="caro8866"
-            style="
-              height: 300px;
-              box-sizing: border-box;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              border: 2px solid;
-              margin: 1em 0;
-              padding: 1em;
-            "
-          >
-            <span
-              >See the Pen
-              <a href="https://codepen.io/caro8866/pen/eYyJrPX">
-                Polygon Text Wrap | DEEP DIVE WEEK</a
-              >
-              by Caroline Thostrup (<a href="https://codepen.io/caro8866"
-                >@caro8866</a
-              >) on <a href="https://codepen.io">CodePen</a>.</span
+            <p>
+              After attaining your chosen polygon you will then need to put the
+              clip path into the styling of the shape's div.
+            </p>
+            <p>
+              Next step is to also put the same clip path as the shape-outside.
+              (This is all shown in the code pen below).
+            </p>
+            <p
+              class="codepen"
+              data-height="300"
+              data-default-tab="html,result"
+              data-slug-hash="eYyJrPX"
+              data-preview="true"
+              data-user="caro8866"
+              style="
+                height: 300px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid;
+                margin: 1em 0;
+                padding: 1em;
+              "
             >
-          </p>
-          <script
-            async
-            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
-          ></script>
-        </section>
+              <span
+                >See the Pen
+                <a href="https://codepen.io/caro8866/pen/eYyJrPX">
+                  Polygon Text Wrap | DEEP DIVE WEEK</a
+                >
+                by Caroline Thostrup (<a href="https://codepen.io/caro8866"
+                  >@caro8866</a
+                >) on <a href="https://codepen.io">CodePen</a>.</span
+              >
+            </p>
+            <script
+              async
+              src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+            ></script>
+          </section>
 
-        <section class="subSectImageWrap">
-          <h4>Text wrap around a png file</h4>
-          <p>
-            In order to text wrap around a image you first need a image to wrap
-            around.
-          </p>
-          <p>
-            Create a png file with a transparent background like the example
-            below:
-          </p>
-          <img src="" alt="" width="400" />
+          <section class="subSectImageWrap">
+            <h3>Text wrap around a png file</h3>
+            <p>
+              In order to text wrap around a image you first need a image to
+              wrap around.
+            </p>
+            <p>
+              Create a png file with a transparent background like the example
+              below:
+            </p>
+            <img src="" alt="" width="400" />
+          </section>
         </section>
 
         <section id="sectScrollText">
-          <h3>Scrolling Text</h3>
+          <h2>Scrolling Text</h2>
           <p>
             Scrolling text can easily and quickly turn a boring and static
             website, fun and dynamic with minimal effort.
@@ -210,20 +210,20 @@
             Here you will be introduced to the many ways you can create moving &
             scrolling text:
           </p>
-          <ol>
+          <ul id="innerSiteNav">
             <li>
               <a href="#subSectHorizontalScrolling">Horizontal scrolling</a>
             </li>
             <li><a href="#subSectVerticalScrolling">Vertical scrolling</a></li>
             <li><a href="#subSectCircularScrolling">Circular scrolling</a></li>
-          </ol>
+          </ul>
           <p>
             All these methods use CSS instead of the deprecated &lt;marquee&gt;
             tag. I will focus on the CSS implementation of scrolling text as it
             is supported by all browsers.
           </p>
           <section id="subSectHorizontalScrolling">
-            <h4>Horizontal Scrolling</h4>
+            <h3>Horizontal Scrolling</h3>
             <p>
               To achieve horizontal scrolling of text you need to use CSS
               animation property alongside the @keyframes rule. To make text
@@ -275,7 +275,7 @@
           </section>
 
           <section id="subSectVerticalScrolling">
-            <h4>Vertical Scrolling</h4>
+            <h3>Vertical Scrolling</h3>
             <p>
               To achieve vertical scrolling of text you need to use CSS
               animation property alongside the @keyframes rule again whilst this
@@ -316,7 +316,7 @@
           </section>
 
           <section id="subSectCircularScrolling">
-            <h4>Circular Scrolling</h4>
+            <h3>Circular Scrolling</h3>
             <p>
               Now, to create circular scrolling, you will need to use some
               JavaScript.
@@ -353,7 +353,7 @@
               src="https://cpwebassets.codepen.io/assets/embed/ei.js"
             ></script>
 
-            <h5>JAVASCRIPT EXPLANATION</h5>
+            <h4>JAVASCRIPT EXPLANATION</h4>
             <ol>
               <li>
                 The code starts by finding the html element with id="circleText"
@@ -378,7 +378,65 @@
               which explains code in everyday language.
             </p>
           </section>
+
+          <section id="subSectContinuousScrolling">
+            <h3>Continuous Scrolling</h3>
+            <p>
+              Creating continuous scrolling text is not pretty. (or at least I
+              have not yet found a pretty solution for it.)
+            </p>
+            <p>
+              Shown in the code pen below is how to create horizontal scrolling
+              continuous text:
+            </p>
+
+            <p
+              class="codepen"
+              data-height="300"
+              data-default-tab="html,result"
+              data-slug-hash="VwyeBpE"
+              data-preview="true"
+              data-user="caro8866"
+              style="
+                height: 300px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid;
+                margin: 1em 0;
+                padding: 1em;
+              "
+            >
+              <span
+                >See the Pen
+                <a href="https://codepen.io/caro8866/pen/VwyeBpE">
+                  Continuous Horizontal Scrolling Text | DEEP DIVE WEEK</a
+                >
+                by Caroline Thostrup (<a href="https://codepen.io/caro8866"
+                  >@caro8866</a
+                >) on <a href="https://codepen.io">CodePen</a>.</span
+              >
+            </p>
+            <script
+              async
+              src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+            ></script>
+          </section>
         </section>
+        <h3>Thank you!</h3>
+        <p>
+          This deep dive week was fun and I enjoyed being able to dive deeper
+          into text wrap and scrolls. However, there are some things I would
+          have liked to worked more with and if I get time this weekend, I plan
+          on adding them to this page.
+        </p>
+        <p>
+          But for now, thank you for reading! I hope you learnt something and
+          that the examples were understandable
+        </p>
+        <h4>Caroline Thostrup</h4>
+        <img src="" alt="" />
       </article>
     </main>
     <footer>

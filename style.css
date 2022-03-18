@@ -1,5 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&family=Montserrat:wght@300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+}
 html {
   background-color: beige;
-  color: steelblue;
-  display: ;
+  color: rgb(180, 70, 70);
+  font-family: var(--header-font);
+  width: 70ch;
+  margin: auto;
+}
+:root {
+  --bg-color: #f6eef8;
+  --primary-color: #c21c1c;
+  --secondary-color: #7e9af4;
+  --primary-darker-color: #851212;
+
+  --header-font: "Fraunces", serif;
+  --body-font: "Montserrat", sans-serif;
+
+  --header-font-weight: 600;
+  --subheader-font-weight: 400;
+  --body-font-weight: 400;
+}
+
+h1 {
+  font-family: var(--header-font);
+  font-size: 4rem;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+
+p,
+b,
+li {
+  font-size: 1.1rem;
+  font-family: var(--body-font);
+}
+
+h2,
+h3,
+h4 {
+  font-family: var(--header-font);
+  font-weight: var(--subheader-font-weight);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(184, 26, 26);
+}
+/* h4 {
+  border-top: 2px dashed var(--primary-color);
+} */
+
+#innerSiteNav {
+  list-style-type: circle;
+  color: var(--primary-color);
+}
+
+#innerSiteNav li:hover {
+  list-style-type: disc;
+  color: var(--primary-darker-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--primary-darker-color);
+}
+
+ol > li {
+  line-height: 1.5rem;
+}
+
+#sectTextWrap > h2,
+#sectScrollText > h2 {
+  border-top: 2px dashed var(--primary-color);
+  padding: 2rem 0 0 0;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    width: 100vw;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: normal;
+  }
+}
+@media only screen and (max-width: 500px) {
+  html {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    width: 80vw;
+  }
 }
